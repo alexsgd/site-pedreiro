@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>João Pedreiro – Reforma e Construção</title>
+  <style>
+
+    /* ===== RESET: zera margens padrão do navegador ===== */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; color: #1a1a1a; }
+
+    /* ===== HERO: seção do topo com fundo escuro ===== */
+    .hero {
+      background: #1a1a2e;
+      color: white;
+      padding: 60px 24px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 28px; line-height: 1.3; margin-bottom: 12px; }
+    .hero p  { font-size: 16px; opacity: 0.85; margin-bottom: 28px; }
+    .hero .estrelas { font-size: 13px; opacity: 0.6; margin-bottom: 10px; }
+
+    /* ===== BOTÃO WHATSAPP ===== */
+    .btn-whats {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 16px 32px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* ===== SEÇÕES GERAIS ===== */
+    .secao { padding: 48px 24px; }
+    .secao h2 {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 24px;
+      color: #1a1a2e;
+    }
+
+    /* ===== CARDS DE SERVIÇOS ===== */
+    .servicos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+    }
+    .card-servico {
+      background: #f5f5f5;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+    .card-servico .icone { font-size: 32px; margin-bottom: 10px; }
+    .card-servico p { font-size: 14px; font-weight: 500; }
+
+    /* ===== GALERIA DE FOTOS ===== */
+    .fotos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+    .fotos img {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* ===== DEPOIMENTOS ===== */
+    .depoimento {
+      background: #f9f9f9;
+      border-left: 4px solid #1a1a2e;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin-bottom: 14px;
+    }
+    .depoimento p    { font-size: 15px; margin-bottom: 6px; }
+    .depoimento span { font-size: 13px; color: #777; }
+
+    /* ===== FORMULÁRIO ===== */
+    .formulario {
+      background: #1a1a2e;
+      padding: 48px 24px;
+      color: white;
+    }
+    .formulario h2 { font-size: 22px; text-align: center; margin-bottom: 24px; }
+    .formulario input,
+    .formulario textarea {
+      width: 100%;
+      padding: 14px;
+      border-radius: 8px;
+      border: none;
+      font-size: 15px;
+      margin-bottom: 14px;
+    }
+    .formulario textarea { height: 110px; resize: vertical; }
+    .formulario button {
+      width: 100%;
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 16px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* ===== RODAPÉ ===== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #999;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- SEÇÃO 1: TOPO (HERO) -->
+  <section class="hero">
+    <p class="estrelas">⭐⭐⭐⭐⭐ +200 clientes atendidos</p>
+    <h1>Reforma e Construção<br>com Qualidade Garantida</h1>
+    <p>Pedreiro profissional em [Sua Cidade].<br>Orçamento grátis em 24h.</p>
+    <a class="btn-whats" href="https://wa.me/5511999999999?text=Olá,%20quero%20um%20orçamento!">
+      💬 Pedir orçamento pelo WhatsApp
+    </a>
+  </section>
+
+  <!-- SEÇÃO 2: SERVIÇOS -->
+  <section class="secao" style="background: white;">
+    <h2>O que fazemos</h2>
+    <div class="servicos">
+      <div class="card-servico"><div class="icone">🧱</div><p>Alvenaria</p></div>
+      <div class="card-servico"><div class="icone">🚿</div><p>Banheiros</p></div>
+      <div class="card-servico"><div class="icone">🪟</div><p>Revestimento</p></div>
+      <div class="card-servico"><div class="icone">🏠</div><p>Reforma geral</p></div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: FOTOS -->
+  <section class="secao" style="background: #fafafa;">
+    <h2>Trabalhos realizados</h2>
+    <div class="fotos">
+      <!-- Substitua os src pelas fotos reais do cliente -->
+      <img src="foto1.jpg" alt="Obra 1" />
+      <img src="foto2.jpg" alt="Obra 2" />
+      <img src="foto3.jpg" alt="Obra 3" />
+      <img src="foto4.jpg" alt="Obra 4" />
+      <img src="foto5.jpg" alt="Obra 5" />
+      <img src="foto6.jpg" alt="Obra 6" />
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4: DEPOIMENTOS -->
+  <section class="secao" style="background: white;">
+    <h2>O que dizem nossos clientes</h2>
+    <div class="depoimento">
+      <p>"Serviço impecável, cumpriu o prazo e ficou lindo!"</p>
+      <span>— Maria S., banheiro reformado</span>
+    </div>
+    <div class="depoimento">
+      <p>"Profissional de verdade, limpou tudo ao terminar."</p>
+      <span>— João P., cozinha ampliada</span>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 5: FORMULÁRIO -->
+  <section class="formulario">
+    <h2>Peça seu orçamento grátis</h2>
+    <input type="text" id="nome" placeholder="Seu nome" />
+    <input type="text" id="fone" placeholder="Seu WhatsApp" />
+    <textarea id="servico" placeholder="Descreva o serviço que precisa..."></textarea>
+    <button onclick="enviarWhatsApp()">Enviar pelo WhatsApp</button>
+  </section>
+
+  <footer>© 2025 João Pedreiro · Todos os direitos reservados</footer>
+
+  <script>
+    // Quando o cliente clica em "Enviar", abre o WhatsApp com os dados preenchidos
+    function enviarWhatsApp() {
+      const nome    = document.getElementById('nome').value;
+      const fone    = document.getElementById('fone').value;
+      const servico = document.getElementById('servico').value;
+
+      const mensagem = `Olá! Me chamo ${nome}, meu WhatsApp é ${fone}. Preciso de: ${servico}`;
+      const url = `https://wa.me/5511999999999?text=${encodeURIComponent(mensagem)}`;
+      window.open(url);
+    }
+  </script>
+
+</body>
+</html>
